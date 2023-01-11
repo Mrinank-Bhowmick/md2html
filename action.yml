@@ -1,0 +1,18 @@
+name: 'Convert Markdown to HTML'
+description: 'Convert a markdown file to an html file'
+author: 'Mrinank Bhowmick'
+inputs:
+  file_path:
+    description: 'The path to the markdown file to convert'
+    required: true
+    default: './README.md'
+outputs:
+  html_path:
+    description: 'The path to the generated HTML file'
+    default: './main.html'
+runs:
+  using: 'python'
+  main: '__main__.py'
+branding:
+  icon: "award"
+  color: "blue"
